@@ -93,7 +93,7 @@ def get_userInfo(userID):
         business = 'None'
     else:
         business = business.string
-    # print 'business: %s' % business
+    print ('business: %s' % business)
     gender = soup.find('input', {'checked': 'checked'})
     if gender == None:
         gender = 'None'
