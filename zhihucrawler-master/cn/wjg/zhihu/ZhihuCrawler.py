@@ -87,13 +87,13 @@ def get_userInfo(userID):
         location = 'None'
     else:
         location = location.string
-    # print 'location: %s' % location
+    #print 'location: %s' % location
     business = soup.find('span', {'class': 'business item'})
     if business == None:
         business = 'None'
     else:
         business = business.string
-    print ('business: %s' % business)
+    #print ('business: %s' % business)
     gender = soup.find('input', {'checked': 'checked'})
     if gender == None:
         gender = 'None'
